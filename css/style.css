@@ -20,17 +20,123 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100 900;
+    font-style: normal;
+}
 
-body {}
+body {
+    background: radial-gradient(circle, rgba(195, 184, 222, 1) 0%, rgba(218, 212, 235, 1) 100%);
+    color: #3E2D55;
+    font-family: "Inter", sans-serif;
+    padding: 2.5%;
+}
 
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+span,
+button,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #3E2D55;
+    text-decoration: none;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {}
 
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-left {
+    align-items: center;
+    display: flex;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.navbar-logo {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.navbar-right {
+    align-items: center;
+    display: flex;
+}
+
+.nav-link {
+    border: 0.06rem solid #c3b8de00;
+    border-radius: 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 650;
+    margin: 0 0.75rem;
+    padding: 0.75rem 1.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    border: 0.06rem solid #3E2D55;
+}
+
+.nav-cta {
+    background: #3E2D55;
+    border: none;
+    border-radius: 1.5rem;
+    height: fit-content;
+    padding: 0.75rem 1.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-cta:hover {
+    transform: scale(1.05);
+}
+
+.nav-cta a {
+    color: #FFFFFF;
+    font-size: 0.85rem;
+}
+
 footer {}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+/* FOR TABLETS */
+
+@media screen and (max-width: 992px) {
+    body {
+        padding: 2.5% 5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 90%;
+    }
+
+    body {
+        padding: 5% 6.5%;
+    }
+}
