@@ -27,6 +27,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Roc Grotesk';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../assets/fonts/roc-grotesk-wide-bold.woff2') format('woff2'),
+        url('../assets/fonts/roc-grotesk-wide-bold.woff') format('woff'),
+        url('../assets/fonts/roc-grotesk-wide-bold.otf') format('opentype');
+}
+
 body {
     background: radial-gradient(circle, rgba(195, 184, 222, 1) 0%, rgba(218, 212, 235, 1) 100%);
     color: #3E2D55;
@@ -197,6 +206,41 @@ header {}
 .mobile-nav-link.active,
 .mobile-nav-link:hover {
     transform: scale(1.15);
+}
+
+
+/* HOME */
+
+.home {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 7.5% 2.75% 5% 2.75%;
+}
+
+.home h1 {
+    font-family: 'Roc Grotesk', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+}
+
+.home p {
+    font-size: 2rem;
+    font-weight: 450;
+    margin-bottom: 2.75rem;
+}
+
+.home a {
+    background: #FFFFFF;
+    border: 0.3rem solid #DAD4EB;
+    border-radius: 1.75rem;
+    color: #3E2D55;
+    font-size: 0.95rem;
+    padding: 0.9rem 1.1rem;
+}
+
+.home a:hover {
+    transform: scale(1.25);
 }
 
 footer {}
