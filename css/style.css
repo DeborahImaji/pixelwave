@@ -103,6 +103,7 @@ header {}
     background: #3E2D55;
     border: none;
     border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.188rem 0.5rem;
     height: fit-content;
     margin-left: 0.75rem;
     padding: 0.75rem 1.25rem;
@@ -120,17 +121,82 @@ header {}
 
 .hamburger {
     align-items: center;
-    background: none;
+    background: #3E2D55;
     border: none;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.188rem 0.5rem;
     cursor: pointer;
     display: none;
     flex-direction: column;
-    padding: 1.5% 4.5%;
+    gap: 0.3rem;
+    padding: 0.85rem 0.5rem;
     z-index: 1002;
 }
 
+.hamburger-line {
+    background: #FFFFFF;
+    border-radius: 1rem;
+    height: 0.1rem;
+    transition: all 0.3s ease;
+    transform-origin: center;
+    width: 1.1rem;
+}
+
+.hamburger-line:nth-child(2) {
+    width: 1.9rem;
+}
+
+.hamburger.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(0.3rem, 0.3rem);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(0.3rem, -0.3rem);
+}
+
 .mobile-menu {
-    display: none;
+    align-items: center;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    transition: right 0.3s ease;
+    width: 100%;
+    z-index: 999;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-nav-link {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    transition: all 0.15s ease-in-out;
+}
+
+.mobile-nav-link.active,
+.mobile-nav-link:hover {
+    transform: scale(1.15);
 }
 
 footer {}
@@ -153,7 +219,11 @@ footer {}
     }
 
     body {
-        padding: 7.5% 6.5%;
+        padding: 6%;
+    }
+
+    .hamburger {
+        display: flex;
     }
 
     .nav-menu {
