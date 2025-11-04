@@ -215,19 +215,19 @@ header {}
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 7.5% 2.75% 5% 2.75%;
+    padding: 7.5% 3.5% 5% 3.5%;
 }
 
 .home h1 {
     font-family: 'Roc Grotesk', sans-serif;
-    font-size: 4rem;
+    font-size: 4.25rem;
     margin-bottom: 0.75rem;
 }
 
 .home p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 450;
-    margin-bottom: 2.75rem;
+    margin-bottom: 3rem;
 }
 
 .home a {
@@ -237,6 +237,7 @@ header {}
     color: #3E2D55;
     font-size: 0.95rem;
     padding: 0.9rem 1.1rem;
+    transition: transform 0.3s ease;
 }
 
 .home a:hover {
