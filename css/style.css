@@ -214,18 +214,23 @@ header {}
 .home {
     align-items: center;
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
-    padding: 7.5% 3.5% 5% 3.5%;
+    padding: 6% 3.5% 5% 3.5%;
+}
+
+.home-left {
+    width: 50%;
 }
 
 .home h1 {
     font-family: 'Roc Grotesk', sans-serif;
-    font-size: 4.25rem;
-    margin-bottom: 0.75rem;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
 }
 
 .home p {
-    font-size: 1.8rem;
+    font-size: 1.75rem;
     font-weight: 450;
     margin-bottom: 3rem;
 }
@@ -235,13 +240,27 @@ header {}
     border: 0.3rem solid #DAD4EB;
     border-radius: 1.75rem;
     color: #3E2D55;
-    font-size: 0.95rem;
-    padding: 0.9rem 1.1rem;
+    font-size: 0.9rem;
+    padding: 0.9rem 1.75rem;
     transition: transform 0.3s ease;
 }
 
 .home a:hover {
     transform: scale(1.25);
+}
+
+.home-right {
+    align-items: center;
+    background: #3E2D55;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    width: 37.5%;
+}
+
+.home-right img {
+    width: 100%;
 }
 
 footer {}
@@ -253,14 +272,41 @@ footer {}
 /* FOR TABLETS */
 
 @media screen and (max-width: 992px) {
+    html {
+        font-size: 87.5%;
+    }
+
     body {
         padding: 3% 5%;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 6rem;
+        padding: 17.5% 5.5% 5% 5.5%;
+        text-align: center;
+    }
+
+    .home-left {
+        width: 100%;
+    }
+
+    .home p {
+        margin-bottom: 2.5rem;
+    }
+
+    .home a {
+        padding: 0.8rem 1.5rem;
+    }
+
+    .home-right {
+        width: 75%;
     }
 }
 
 @media screen and (max-width: 500px) {
     html {
-        font-size: 90%;
+        font-size: 75%;
     }
 
     body {
@@ -277,5 +323,18 @@ footer {}
 
     .nav-cta {
         display: none;
+    }
+
+    .home {
+        gap: 4rem;
+        padding: 35% 5.5% 5% 5.5%;
+    }
+
+    .home h1 {
+        font-size: 3.25rem;
+    }
+
+    .home-right {
+        width: 100%;
     }
 }
