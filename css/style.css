@@ -280,7 +280,7 @@ header {}
 .projects-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 5% 0%;
+    margin: 3% 0%;
 }
 
 footer {}
