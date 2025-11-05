@@ -263,6 +263,26 @@ header {}
     width: 100%;
 }
 
+
+/* WORK */
+
+.work-about-wrapper {
+    background: #FFFFFF;
+    border-radius: 1.25rem;
+    padding: 4% 3.5%;
+}
+
+.work h2 {
+    font-family: 'Roc Grotesk', sans-serif;
+    font-size: 2.5rem;
+}
+
+.projects-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0%;
+}
+
 footer {}
 
 /******************************************
