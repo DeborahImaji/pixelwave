@@ -256,7 +256,12 @@ header {}
     display: flex;
     justify-content: center;
     padding: 5%;
+    transition: all 0.4s ease-in-out;
     width: 37.5%;
+}
+
+.home-right:hover {
+    transform: scale(1.05);
 }
 
 .home-right img {
@@ -293,7 +298,12 @@ header {}
     border-radius: 0.75rem;
     box-shadow: rgba(0, 0, 0, 0.4) 0rem 0.125rem 0.25rem, rgba(0, 0, 0, 0.3) 0rem 0.438rem 0.813rem -0.188rem, rgba(0, 0, 0, 0.2) 0rem -0.188rem 0rem inset;
     margin-bottom: 7.5%;
+    transition: all 0.4s ease-in-out;
     width: 100%;
+}
+
+.projects-wrapper img:hover {
+    transform: scale(1.05);
 }
 
 .projects-wrapper h4 {
@@ -304,7 +314,12 @@ header {}
     margin-bottom: 4.5%;
     padding: 3.5% 5%;
     text-align: center;
+    transition: all 0.4s ease-in-out;
     width: 30%;
+}
+
+.projects-wrapper h4:hover {
+    transform: scale(1.05);
 }
 
 .projects-wrapper p {
@@ -355,6 +370,10 @@ header {}
     text-align: center;
     transition: all 0.4s ease-in-out;
     width: 47.5%;
+}
+
+.about-right div:hover {
+    transform: scale(1.05);
 }
 
 .about-right h4 {
@@ -418,6 +437,23 @@ footer {}
     .projects-wrapper div {
         width: 45%;
     }
+
+    .about {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10% 0% 2.5% 0%;
+        text-align: center;
+    }
+
+    .about-left {
+        width: 100%;
+    }
+
+    .about-right {
+        margin-top: 5%;
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -477,5 +513,29 @@ footer {}
 
     .projects-wrapper div {
         width: 100%;
+    }
+
+    .about {
+        padding: 20% 0% 5% 0%;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+        margin-bottom: 6%;
+    }
+
+    .about-right {
+        margin-top: 9%;
+        width: 100%;
+    }
+
+    .about-right h4 {
+        font-size: 2.5rem;
+        margin-bottom: 4%;
+    }
+
+    .about-right span {
+        font-size: 0.7rem;
+        font-style: italic;
     }
 }
