@@ -313,6 +313,60 @@ header {}
     width: 40%;
 }
 
+.about {
+    display: flex;
+    gap: 6%;
+    padding: 4.5% 0%;
+}
+
+.about-left {
+    width: 60%;
+}
+
+.about h2 {
+    font-family: 'Roc Grotesk', sans-serif;
+    font-size: 2.75rem;
+    margin-bottom: 4%;
+}
+
+.about p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.about-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.25%;
+    width: 40%;
+}
+
+.about-right div {
+    align-items: center;
+    background: #3E2D55;
+    border-radius: 0.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0rem 3.125rem 6.25rem -1.25rem, rgba(0, 0, 0, 0.3) 0rem 1.875rem 3.75rem -1.875rem;
+    display: flex;
+    color: #FFFFFF;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2.25%;
+    padding: 7.5% 0%;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    width: 47.5%;
+}
+
+.about-right h4 {
+    font-size: 3rem;
+    margin-bottom: 2.75%;
+}
+
+.about-right span {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
 footer {}
 
 /******************************************
@@ -389,7 +443,7 @@ footer {}
 
     .home {
         gap: 2.5rem;
-        padding: 22.5% 5.5% 5% 5.5%;
+        padding: 22.5% 5.5% 17.5% 5.5%;
     }
 
     .home h1 {
@@ -407,5 +461,21 @@ footer {}
 
     .home-right {
         width: 90%;
+    }
+
+    .work h2 {
+        font-size: 1.75rem;
+    }
+
+    .work-about-wrapper {
+        padding: 10% 7.5%;
+    }
+
+    .projects-wrapper {
+        margin: 9% 0%;
+    }
+
+    .projects-wrapper div {
+        width: 100%;
     }
 }
